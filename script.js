@@ -70,7 +70,7 @@
     'ECE Student',
     'Full Stack Developer',
     'ML Enthusiast',
-    'FPGA Developer',
+    'RTL Design',
     'Problem Solver',
     'Open Source Contributor',
   ];
