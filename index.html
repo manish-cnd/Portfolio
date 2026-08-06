@@ -1,0 +1,1810 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio — Manish Tiwari</title>
+    <meta
+      name="description"
+      content="Manish Kumar Tiwari is an Electronics & Communication Engineering student with a passion for Full Stack Development, VLSI and Machine Learning."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ============================================================
+         ⏳ PRELOADER — To disable: comment out this entire div
+         ============================================================ -->
+    <div id="preloader">
+      <div class="preloader-inner">
+        <div class="preloader-logo">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-name">MANISH TIWARI</span>
+          <span class="logo-bracket">/&gt;</span>
+        </div>
+        <div class="preloader-bar-wrap">
+          <div class="preloader-bar" id="preloader-bar"></div>
+        </div>
+        <p class="preloader-text">Loading portfolio...</p>
+      </div>
+    </div>
+    <!-- ============ END PRELOADER ============ -->
+
+    <!-- ============ NAVBAR ============ -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-name">MANISH TIWARI</span>
+          <span class="logo-bracket">/&gt;</span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#concepts" class="nav-link">Knowledge</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <!-- ✏️ ACHIEVEMENTS NAV — comment out this line if you hide the Achievements section -->
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Theme Toggle -->
+        <button
+          class="theme-toggle"
+          id="theme-toggle"
+          aria-label="Toggle light/dark mode"
+          title="Toggle theme"
+        >
+          <span class="theme-icon theme-icon-dark">🌙</span>
+          <span class="theme-icon theme-icon-light">☀️</span>
+        </button>
+
+        <a href="#contact" class="btn-hire">Hire Me</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <div class="grid-overlay"></div>
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Open to internships &amp; opportunities
+        </div>
+        <h1 class="hero-title">
+          Hi, I'm <span class="highlight-name">Manish Tiwari</span><br />
+          <span class="typed-wrapper">
+            <span class="typed-text" id="typed-text"></span
+            ><span class="cursor">|</span>
+          </span>
+        </h1>
+        <p class="hero-description">
+          ECE student passionate about bridging
+          <strong>hardware &amp; software</strong> — building full-stack web
+          apps, ML systems, and exploring digital design.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">View My Work</a>
+          <a href="#contact" class="btn-secondary">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+              ></path>
+              <polyline points="22,6 12,12 2,6"></polyline>
+            </svg>
+            Get In Touch
+          </a>
+        </div>
+        <!-- ============================================================
+             🔢 STATS COUNTER — data-target sets the end number.
+             data-suffix sets what appears after (e.g. "+").
+             To disable animation: comment out the JS IIFE in script.js
+             labelled  ANIMATED STATS COUNTER
+             ============================================================ -->
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number" data-target="3" data-suffix="+">2+</span>
+            <span class="stat-label">Years Coding</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number" data-target="5" data-suffix="+"
+              >5+</span
+            >
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number" data-target="10" data-suffix="+"
+              >10+</span
+            >
+            <span class="stat-label">Technologies</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="avatar-container">
+          <div class="avatar-ring"></div>
+          <div class="avatar-img">
+            <img src="image/photo.JPG" alt="Profile Photo" class="avatar-photo">
+            <!-- <svg
+              class="avatar-icon"
+              viewBox="0 0 200 200"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="100" cy="80" r="45" fill="url(#avatarGrad)" />
+              <ellipse cx="100" cy="175" rx="70" ry="45" fill="url(#avatarGrad)" />
+              <defs>
+                <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color: #6366f1" />
+                  <stop offset="100%" style="stop-color: #8b5cf6" />
+                </linearGradient>
+              </defs>
+            </svg> -->
+
+          </div>
+          <div class="floating-badge badge-react">React</div>
+          <div class="floating-badge badge-python">Python</div>
+          <div class="floating-badge badge-ml">ML</div>
+          <div class="floating-badge badge-node">FPGA</div>
+          <div class="floating-badge badge-custom1">C++</div>
+          <div class="floating-badge badge-custom2">DSA</div>
+        </div>
+      </div>
+      <div class="scroll-hint">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <!--
+    ✏️  ABOUT SECTION — HOW TO EDIT:
+    Find the paragraphs below (class="about-intro" and class="about-body")
+    and replace the text with your own story. Also update:
+      - .highlight-item entries (degree, location, status)
+      - The stats in the hero section above
+  -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Who I Am</span>
+          <h2 class="section-title">About <span class="accent">Me</span></h2>
+          <p class="section-subtitle">
+            A developer who loves building things that matter
+          </p>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <!-- ✏️ EDIT: Replace the paragraphs below with your own bio -->
+            <p class="about-intro">
+              I'm an
+              <strong>Electronics &amp; Communication Engineering</strong>
+              student with a deep passion for
+              <strong>Full Stack Development</strong> and
+              <strong>Machine Learning</strong>. I love blending hardware
+              knowledge with modern software — from writing Verilog on FPGAs to
+              shipping production-ready web applications.
+            </p>
+            <p class="about-body">
+              Currently pursuing my B.Tech, I'm actively building projects that
+              combine solid software engineering with data-driven techniques. I
+              find it incredibly rewarding to work across the full stack —
+              designing circuits, writing backends, and crafting polished user
+              interfaces.
+            </p>
+            <p class="about-body">
+              <!-- When I'm not coding, I'm exploring research papers, working on
+              FPGA-based digital design projects, or collaborating on
+              open-source ideas. ---->
+              I'm actively looking for
+              <strong>internships</strong> where I can contribute and grow.
+            </p>
+            <!-- ✏️ END EDIT ZONE -->
+
+            <div class="about-highlights">
+              <!-- ✏️ EDIT: Update your degree, location, and status below -->
+              <div class="highlight-item">
+                <span class="highlight-icon">🎓</span>
+                <div>
+                  <strong
+                    >B.Tech — Electronics &amp; Communication Engg.</strong
+                  >
+                  <span>National Institute of Technology Patna · Expected 2027</span>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">📍</span>
+                <div>
+                  <strong>Patna</strong>
+                  <span>India · Open to Remote Internships</span>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">💼</span>
+                <div>
+                  <strong>Status</strong>
+                  <span>Actively seeking internships &amp; collaborations</span>
+                </div>
+              </div>
+              <!-- ✏️ END EDIT ZONE -->
+            </div>
+            <a href="#" class="btn-download" id="download-cv">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Download Resume
+            </a>
+          </div>
+          <div class="about-card-grid">
+            <div class="about-card card-1">
+              <div class="card-icon">⚡</div>
+              <h4>Fast Learner</h4>
+              <p>Constantly upskilling — from Verilog to Web Development.</p>
+            </div>
+            <div class="about-card card-2">
+              <div class="card-icon">🔧</div>
+              <h4>Hardware + Software</h4>
+              <p>
+                Comfortable at both ends — FPGAs, circuits, and full-stack apps.
+              </p>
+            </div>
+            <div class="about-card card-3">
+              <div class="card-icon">🤝</div>
+              <h4>Team Player</h4>
+              <p>
+                Great communicator who thrives in collaborative, agile
+                environments.
+              </p>
+            </div>
+            <div class="about-card card-4">
+              <div class="card-icon">🧠</div>
+              <h4>ML Enthusiast</h4>
+              <p>
+                Actively learning and applying deep learning &amp; computer
+                vision.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">What I Know</span>
+          <h2 class="section-title">
+            Skills & <span class="accent">Technologies</span>
+          </h2>
+          <p class="section-subtitle">
+            My technical toolkit across software, hardware, and AI
+          </p>
+        </div>
+        <div class="skills-categories">
+          <div class="skill-category">
+            <h3 class="category-title">
+              <span class="category-icon">🌐</span> Frontend
+            </h3>
+            <div class="skills-grid">
+              <div class="skill-chip" data-level="90">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                  alt="React"
+                  class="skill-icon"
+                  onerror="this.style.display = 'none'"
+                />
+                <span>React</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--pct: 90%"></div>
+                </div>
+              </div>
+              <!-- <div class="skill-chip" data-level="85">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
+                  alt="Vue"
+                  class="skill-icon"
+                  onerror="this.style.display = 'none'"
+                />
+                <span>Vue.js</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--pct: 85%"></div>
+                </div>
+              </div> -->
+              <div class="skill-chip" data-level="95">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  alt="JavaScript"
+                  class="skill-icon"
+                  onerror="this.style.display = 'none'"
+                />
+                <span>JavaScript</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--pct: 95%"></div>
+                </div>
+              </div>
+              <div class="skill-chip" data-level="94">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                  alt="HTML5"
+                  class="skill-icon"
+                  onerror="this.style.display = 'none'"
+                />
+                <span>HTML / CSS</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--pct: 94%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="category-title">
+              <span class="category-icon">⚙️</span> Backend
+            </h3>
+            <div class="skills-grid">
+              <div class="skill-chip" data-level="30">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                  alt="Python"
+                  class="skill-icon"
+                  onerror="this.style.display = 'none'"
+                />
+                <span>Python</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--pct: 30%"></div>
+                </div>
+              </div>
+              <!-- <div class="skill-chip" data-level="80">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
+                  alt="Django"
+                  class="skill-icon"
+                  onerror="this.style.display = 'none'"
+                />
+                <span>Django / Flask</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--pct: 80%"></div>
+                </div>
+              </div> -->
+              <div class="skill-chip" data-level="82">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                  alt="Node.js"
+                  class="skill-icon"
+                  onerror="this.style.display = 'none'"
+                />
+                <span>Node.js / Express</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--pct: 82%"></div>
+                </div>
+              </div>
+              <div class="skill-chip" data-level="65">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg"
+                  alt="GraphQL"
+                  class="skill-icon"
+                  onerror="this.style.display = 'none'"
+                />
+                <span>REST / GraphQL</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--pct: 65%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="category-title">
+              <span class="category-icon">🗄️</span> Databases
+            </h3>
+            <div class="skills-grid">
+              <div class="skill-chip" data-level="85">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                  alt="PostgreSQL"
+                  class="skill-icon"
+                  onerror="this.style.display = 'none'"
+                />
+                <span>PostgreSQL</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--pct: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-chip" data-level="80">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                  alt="MongoDB"
+                  class="skill-icon"
+                  onerror="this.style.display = 'none'"
+                />
+                <span>MongoDB</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--pct: 80%"></div>
+                </div>
+              </div>
+              <div class="skill-chip" data-level="72">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                  alt="MySQL"
+                  class="skill-icon"
+                  onerror="this.style.display = 'none'"
+                />
+                <span>MySQL</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--pct: 72%"></div>
+                </div>
+              </div>
+              <!-- <div class="skill-chip" data-level="65">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg"
+                  alt="Redis"
+                  class="skill-icon"
+                  onerror="this.style.display = 'none'"
+                />
+                <span>Redis</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--pct: 65%"></div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="category-title">
+              <span class="category-icon">🤖</span> Machine Learning
+            </h3>
+            <div class="skills-grid">
+              <div class="skill-chip" data-level="30">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
+                  alt="TensorFlow"
+                  class="skill-icon"
+                  onerror="this.style.display = 'none'"
+                />
+                <span>TensorFlow</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--pct: 30%"></div>
+                </div>
+              </div>
+              <div class="skill-chip" data-level="68">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg"
+                  alt="PyTorch"
+                  class="skill-icon"
+                  onerror="this.style.display = 'none'"
+                />
+                <span>PyTorch</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--pct: 36%"></div>
+                </div>
+              </div>
+              <div class="skill-chip" data-level="50">
+                <span class="skill-emoji">👁️</span>
+                <span>Computer Vision</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--pct: 36%"></div>
+                </div>
+              </div>
+              <!-- <div class="skill-chip" data-level="73">
+                <span class="skill-emoji">📊</span>
+                <span>Scikit-Learn</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--pct: 73%"></div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+
+          <!-- ECE / Hardware Skills -->
+          <div class="skill-category ece-category">
+            <h3 class="category-title">
+              <span class="category-icon">📡</span> ECE / Hardware Design
+            </h3>
+            <div class="skills-grid">
+              <div class="skill-chip" data-level="60">
+                <span class="skill-emoji">🔷</span>
+                <span>Verilog HDL</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--pct: 60%"></div>
+                </div>
+              </div>
+              <div class="skill-chip" data-level="50">
+                <span class="skill-emoji">🔬</span>
+                <span>FPGA (BASYS 3)</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--pct: 50%"></div>
+                </div>
+              </div>
+              <div class="skill-chip" data-level="70">
+                <span class="skill-emoji">🛠️</span>
+                <span>Vivado Design Suite</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--pct: 70%"></div>
+                </div>
+              </div>
+              <div class="skill-chip" data-level="65">
+                <span class="skill-emoji">🔌</span>
+                <span>Cadence (Basics)</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--pct: 65%"></div>
+                </div>
+              </div>
+              <div class="skill-chip" data-level="70">
+                <span class="skill-emoji">📐</span>
+                <span>Digital Circuit Design</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--pct: 70%"></div>
+                </div>
+              </div>
+              <div class="skill-chip" data-level="40">
+                <span class="skill-emoji">📻</span>
+                <span>Signal Processing</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--pct: 40%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="category-title">
+              <span class="category-icon">🛠️</span> DevOps &amp; Tools
+            </h3>
+            <div class="skills-grid">
+              <div class="skill-chip" data-level="88">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                  alt="Git"
+                  class="skill-icon"
+                  onerror="this.style.display = 'none'"
+                />
+                <span>Git / GitHub</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--pct: 88%"></div>
+                </div>
+              </div>
+              <!-- <div class="skill-chip" data-level="65">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                  alt="Docker"
+                  class="skill-icon"
+                  onerror="this.style.display = 'none'"
+                />
+                <span>Docker</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--pct: 65%"></div>
+                </div>
+              </div> -->
+              <div class="skill-chip" data-level="50">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+                  alt="Linux"
+                  class="skill-icon"
+                  onerror="this.style.display = 'none'"
+                />
+                <span>Linux / Bash</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--pct: 50%"></div>
+                </div>
+              </div>
+              <!-- <div class="skill-chip" data-level="60">
+                <span class="skill-emoji">☁️</span>
+                <span>Cloud (AWS/GCP)</span>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="--pct: 60%"></div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CORE CONCEPTS / SUBJECT EXPERTISE ============ -->
+    <section class="section concepts-section" id="concepts">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Academic Depth</span>
+          <h2 class="section-title">
+            Core <span class="accent">Knowledge</span>
+          </h2>
+          <p class="section-subtitle">
+            Subjects I've studied in depth and apply in my projects
+          </p>
+        </div>
+
+        <div class="concepts-wrapper">
+          <!-- CS / Software Domain -->
+          <div class="concept-block">
+            <div class="concept-block-header">
+              <span class="concept-block-icon">💻</span>
+              <h3>Computer Science &amp; Software</h3>
+            </div>
+            <div class="concept-chips">
+              <span class="concept-chip level-adv">Operating Systems</span>
+              <span class="concept-chip level-adv">DBMS</span>
+              <span class="concept-chip level-adv">Computer Networks</span>
+              <span class="concept-chip level-adv"
+                >Data Structures &amp; Algorithms</span
+              >
+              <span class="concept-chip level-mid">System Design</span>
+              <span class="concept-chip level-mid"
+                >Object-Oriented Programming</span
+              >
+              <span class="concept-chip level-mid">Cyber Security</span>
+              <span class="concept-chip level-mid"
+                >Machine Learning Fundamentals</span
+              >
+            </div>
+          </div>
+
+          <!-- ECE Domain -->
+          <div class="concept-block">
+            <div class="concept-block-header">
+              <span class="concept-block-icon">📡</span>
+              <h3>Electronics &amp; Communication</h3>
+            </div>
+            <div class="concept-chips">
+              <span class="concept-chip level-adv ece-chip"
+                >Digital Electronics</span
+              >
+              <span class="concept-chip level-adv ece-chip">VLSI Design</span>
+              <span class="concept-chip level-adv ece-chip"
+                >Communication Systems</span
+              >
+              <span class="concept-chip level-adv ece-chip"
+                >Antenna &amp; Wave Propagation</span
+              >
+              <span class="concept-chip level-mid ece-chip"
+                >Signal &amp; Systems</span
+              >
+              <span class="concept-chip level-mid ece-chip"
+                >Microprocessors &amp; Microcontrollers</span
+              >
+              <span class="concept-chip level-mid ece-chip"
+                >Electromagnetic Theory</span
+              >
+              <span class="concept-chip level-lrn ece-chip"
+                >RF &amp; Wireless Communication</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Legend -->
+        <div class="concept-legend">
+          <span class="legend-item"
+            ><span class="legend-dot adv-dot"></span> Advanced</span
+          >
+          <span class="legend-item"
+            ><span class="legend-dot mid-dot"></span> Intermediate</span
+          >
+          <span class="legend-item"
+            ><span class="legend-dot lrn-dot"></span> Learning</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <!--
+    =====================================================================
+    📝 HOW TO ADD / EDIT YOUR OWN PROJECTS:
+
+    Each project is a <div class="project-card"> block.
+    To add YOUR project:
+      1. Copy one entire <div class="project-card"> ... </div> block
+      2. Paste it inside <div class="projects-grid" id="projects-grid">
+      3. Update data-category: "fullstack" | "ml" | "backend" | "ece"
+      4. Change the gradient in style="background: linear-gradient(...)"
+      5. Change the emoji in <div class="project-img-icon">
+      6. Set your live demo link:  href="https://your-live-demo.com"
+      7. Set your GitHub link:     href="https://github.com/you/repo"
+      8. Update project-tag, project-title, project-desc, project-stack
+
+    To HIDE a dummy project: wrap it in <!-- and - -> (HTML comment)
+    =====================================================================
+  -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">My Work</span>
+          <h2 class="section-title">
+            Featured <span class="accent">Projects</span>
+          </h2>
+          <p class="section-subtitle">
+            A selection of things I've built with real-world applications
+          </p>
+        </div>
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+          <button class="filter-btn" data-filter="ml">ML / AI</button>
+          <button class="filter-btn" data-filter="frontend">Frontend</button>
+          <button class="filter-btn" data-filter="backend">Backend</button>
+          <button class="filter-btn" data-filter="ece">ECE / Hardware</button>
+         
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <!--
+          PROJECT 1 ✏️ — Replace with your actual project
+          data-category options: fullstack | ml | backend | ece
+        -->
+          <div class="project-card" data-category="fullstack">
+            <div
+              class="project-img"
+              style="
+                background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+              "
+            >
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://alumniconnect-livid.vercel.app/" class="project-link" id="proj-live-1">
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                      ></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                    Live Demo
+                  </a>
+                  <a href="https://github.com/manish-cnd/Mentorship-Platform" class="project-link" id="proj-gh-1">
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                      />
+                    </svg>
+                    GitHub
+                  </a>
+                </div>
+              </div>
+              <!-- <div class="project-img-icon">🛒</div> -->
+               <div class="project-img-icon" style="width: 100%; height: 100%;">
+                 <img src="image/mentorship.png" alt="Mentorship Platform" style="width: 100%; height: 100%; object-fit: cover;">
+               </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-tag">Full Stack</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="project-title">Mentorship Platform</h3>
+              <p class="project-desc">
+                A secure, full-stack MERN application designed to intelligently connect students with mentors. It leverages AI-driven profile matching and features real-time messaging via Socket.io, alongside an enterprise-grade authentication and security pipeline.
+              </p>
+              <div class="project-stack">
+                <span>React</span><span>Node.js</span><span>Express.js</span
+                ><span>MongoDB</span><span>socket.io</span><span>JWT</span>
+              </div>
+            </div>
+          </div>
+
+          <!--
+          PROJECT 2 ✏️ — Replace with your actual project
+        -->
+          <div class="project-card featured" data-category="ml">
+            <div
+              class="project-img"
+              style="
+                background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
+              "
+            >
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/manish-cnd/AquaClarity" class="project-link" id="proj-live-2">
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                      ></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                    Live Demo
+                  </a>
+                  <a href="https://github.com/manish-cnd/AquaClarity" class="project-link" id="proj-gh-2">
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                      />
+                    </svg>
+                    GitHub
+                  </a>
+                </div>
+              </div>
+              <div class="project-img-icon" style="width: 100%; height: 100%;">
+                <img src="image/aquaclarity.jpg" alt="AquaClarity Enhancement" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+              <div class="featured-badge">⭐ Featured</div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-tag ml-tag">ML / AI</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="project-title">AquaClarity - UWIE using KAN Layer Integration</h3>
+              <p class="project-desc">
+                A specialized machine learning project utilizing PyTorch to restore and improve degraded underwater images. By engineering custom KAN layers into the baseline architecture, the model significantly enhances feature extraction, color correction, and object visibility in highly scattered environments.
+              </p>
+              <div class="project-stack">
+                <span>Pytorch</span><span>Google Colab</span><span>ML</span
+                ><span>Vision Transformer</span><span>KAN</span>
+              </div>
+            </div>
+          </div>
+
+          <!--
+          PROJECT 3 ✏️ — Replace with your actual project
+        -->
+          <!-- <div class="project-card" data-category="ece">
+            <div
+              class="project-img"
+              style="
+                background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
+              "
+            >
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link" id="proj-live-3">
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                      ></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                    Report
+                  </a>
+                  <a href="#" class="project-link" id="proj-gh-3">
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                      />
+                    </svg>
+                    GitHub
+                  </a>
+                </div>
+              </div>
+              <div class="project-img-icon">🔷</div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-tag ece-tag">ECE / Hardware</span>
+                <span class="project-year">2024</span>
+              </div>
+              <h3 class="project-title">FPGA-based Digital Design (BASYS 3)</h3>
+              <p class="project-desc">
+                Implemented a 4-bit ALU and 7-segment display controller on
+                Xilinx BASYS 3 FPGA using Verilog HDL and synthesized with
+                Vivado. Verified through timing simulation.
+              </p>
+              <div class="project-stack">
+                <span>Verilog</span><span>Vivado</span><span>BASYS 3</span
+                ><span>FPGA</span>
+              </div>
+            </div>
+          </div> -->
+
+          <!--
+          PROJECT 4 ✏️ — Replace with your actual project
+        -->
+          <!-- <div class="project-card" data-category="frontend">
+            <div
+              class="project-img"
+              style="
+                background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+              "
+            >
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://manish-cnd.github.io/Electro-Circuit/#/dashboard" class="project-link" id="proj-live-4">
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                      ></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                    Live Demo
+                  </a>
+                  <a href="https://github.com/manish-cnd/Electro-Circuit" class="project-link" id="proj-gh-4">
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                      />
+                    </svg>
+                    GitHub
+                  </a>
+                </div>
+              </div>
+              <div class="project-img-icon" style="width: 100%; height: 100%;">
+                <img src="image/electrocircuit.PNG" alt="ELectrocircuit" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-tag">Frontend</span>
+                <span class="project-year">2024</span>
+              </div>
+              <h3 class="project-title">ELectrocircuit - Web Based Digital Logic Simulator</h3>
+              <p class="project-desc">
+               A high-performance, web-based digital logic simulator built with React.js and Zustand. It allows users to design and visualize complex circuits in real-time, maintaining a smooth 60 FPS rendering rate while efficiently handling hundreds of dynamic logic gates and connections.
+              </p>
+              <div class="project-stack">
+                <span>React</span><span>Zustand</span><span>HTML5</span
+                ><span>CSS3</span>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="project-card" data-category="frontend">
+  <div class="project-img" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%);">
+    <div class="project-overlay">
+      <div class="project-links">
+        <a href="https://manish-cnd.github.io/Electro-Circuit/#/dashboard" class="project-link" id="proj-live-4">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+          Live Demo
+        </a>
+        <a href="https://github.com/manish-cnd/Electro-Circuit" class="project-link" id="proj-gh-4">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+          </svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+    <div class="project-img-icon" style="width: 100%; height: 100%;">
+      <img src="image/electrocircuit.PNG" alt="Electrocircuit" style="width: 100%; height: 100%; object-fit: cover;">
+    </div>
+  </div>
+  <div class="project-info">
+    <div class="project-meta">
+      <span class="project-tag">Frontend</span>
+      <span class="project-year">2026</span>
+    </div>
+    <h3 class="project-title">Electrocircuit - Web Based Digital Logic Simulator</h3>
+    <p class="project-desc">
+      A high-performance, web-based digital logic simulator built with React.js and Zustand. It allows users to design and visualize complex circuits in real-time, maintaining a smooth 60 FPS rendering rate while efficiently handling hundreds of dynamic logic gates and connections.
+    </p>
+    <div class="project-stack">
+      <!-- Fixed stray line breaks and spaces here -->
+      <span>React</span><span>Zustand</span><span>HTML5</span><span>CSS3</span>
+    </div>
+  </div>
+</div>
+
+
+          <!--
+          PROJECT 5 ✏️ — Replace or hide by wrapping with HTML comment
+        -->
+          <div class="project-card" data-category="frontend">
+            <div
+              class="project-img"
+              style="
+                background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
+              "
+            >
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/manish-cnd/e_commerce/blob/main/README.md" class="project-link" id="proj-live-5">
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                      ></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                    Live Demo
+                  </a>
+                  <a href="https://github.com/manish-cnd/e_commerce" class="project-link" id="proj-gh-5">
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                      />
+                    </svg>
+                    GitHub
+                  </a>
+                </div>
+              </div>
+             <div class="project-img-icon" style="width: 100%; height: 100%;">
+                <img src="image/ecommerce.jpg" alt="E-Commerce - Anusarveshu" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-tag ml-tag">Frontend</span>
+                <span class="project-year">2025</span>
+              </div>
+              <h3 class="project-title">E-Commerce</h3>
+              <p class="project-desc">
+                A fully responsive front-end e-commerce application built using React.js and Tailwind CSS. It features a dynamic product catalog with real-time search and filtering, a complete three-step interactive checkout pipeline, and a modern user interface equipped with seamless dark/light mode toggling and micro-animations.
+              </p>
+              <div class="project-stack">
+                <span>React.js</span><span>Tailwind CSS</span><span>Context API</span
+                >
+              </div>
+            </div>
+          </div>
+
+
+            <div class="project-card" data-category="frontend">
+            <div
+              class="project-img"
+              style="
+                background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
+              "
+            >
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://manish-cnd.github.io/Rapid-Whatsapp/" class="project-link" id="proj-live-3">
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                      ></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                    Live Demo
+                  </a>
+                  <a href="https://github.com/manish-cnd/Rapid-Whatsapp" class="project-link" id="proj-gh-3">
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                      />
+                    </svg>
+                    GitHub
+                  </a>
+                </div>
+              </div>
+              <!-- <div class="project-img-icon">🔷</div> -->
+               <div class="project-img-icon" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #075E54 0%, #128C7E 100%);">
+                <svg width="110" height="110" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <!-- Chat Bubble Shape -->
+                  <path d="M85,15 H15 C9.5,15 5,19.5 5,25 V65 C5,70.5 9.5,75 15,75 H25 V92 L42,75 H85 C90.5,75 95,70.5 95,65 V25 C95,19.5 90.5,15 85,15 Z" fill="#25D366" />
+    <!-- Rapid Lightning Bolt Cutout -->
+                  <path d="M58,25 L38,48 L50,48 L44,68 L68,42 L55,42 Z" fill="#FFFFFF" />
+                </svg>
+               </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-tag ece-tag">Frontend</span>
+                <span class="project-year">2024</span>
+              </div>
+              <h3 class="project-title">Rapid WhatsApp</h3>
+              <p class="project-desc">
+                A React.js-based communication tool that integrates the WhatsApp API to streamline messaging workflows. It features dynamic QR code generation, automated templating, and strict international phone number validation to ensure highly accurate and efficient message routing.
+              </p>
+              <div class="project-stack">
+                <span>React.js</span><span>CSS3</span><span>WhatsAPP API</span
+                >
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <!--
+          PROJECT 6 ✏️ — Replace or hide with HTML comment
+        -->
+          <!-- <div class="project-card" data-category="backend">
+            <div
+              class="project-img"
+              style="
+                background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
+              "
+            >
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link" id="proj-live-6">
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                      ></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                    Live Demo
+                  </a>
+                  <a href="#" class="project-link" id="proj-gh-6">
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                      />
+                    </svg>
+                    GitHub
+                  </a>
+                </div>
+              </div>
+              <div class="project-img-icon">🔐</div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-tag be-tag">Backend</span>
+                <span class="project-year">2023</span>
+              </div>
+              <h3 class="project-title">Auth Microservice</h3>
+              <p class="project-desc">
+                Production-ready authentication microservice with OAuth2, JWT
+                refresh tokens, rate limiting, and audit logging. Handles 10k+
+                requests/min under load tests.
+              </p>
+              <div class="project-stack">
+                <span>Node.js</span><span>Express</span><span>Redis</span
+                ><span>PostgreSQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+
+      
+    </section>
+
+    <!-- ============ EXPERIENCE / TIMELINE ============ -->
+    <!--
+    NOTE: Work experience entries are commented out below since
+    they are placeholder/future entries. Only Education is shown.
+    When you get real internships/jobs, UNCOMMENT those blocks.
+  -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">My Journey</span>
+          <h2 class="section-title">
+            Experience & <span class="accent">Education</span>
+          </h2>
+          <p class="section-subtitle">
+            My academic background and learning journey
+          </p>
+        </div>
+        <div class="timeline-container">
+          <div class="timeline-line"></div>
+
+          <!--
+          ================================================================
+          🔒 COMMENTED OUT — FUTURE WORK EXPERIENCE
+          Uncomment and fill in with your REAL internship/job details
+          when you have them. Do NOT show placeholder work experience.
+          ================================================================
+
+        <div class="timeline-item left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-badge work">Work</span>
+              <span class="timeline-date">Month Year — Present</span>
+            </div>
+            <h3 class="timeline-title">Your Role Here</h3>
+            <h4 class="timeline-org">Company Name · Location</h4>
+            <p class="timeline-desc">
+              Describe what you did, technologies used, impact created.
+            </p>
+            <div class="timeline-tags">
+              <span>Tech 1</span><span>Tech 2</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-badge intern">Internship</span>
+              <span class="timeline-date">Month Year — Month Year</span>
+            </div>
+            <h3 class="timeline-title">Internship Role</h3>
+            <h4 class="timeline-org">Company Name · Location</h4>
+            <p class="timeline-desc">
+              Describe your internship experience and contributions.
+            </p>
+            <div class="timeline-tags">
+              <span>Tech 1</span><span>Tech 2</span>
+            </div>
+          </div>
+        </div>
+
+        ================================================================
+        END OF COMMENTED WORK EXPERIENCE
+        ================================================================
+        -->
+
+          <!-- ✏️ EDIT: Update with your actual college and degree details -->
+          <div
+            class="timeline-item left"
+            style="padding-right: 0; justify-content: center"
+          >
+            <div class="timeline-dot edu-dot" style="left: 50%"></div>
+            <div
+              class="timeline-card edu-card"
+              style="max-width: 560px; width: 100%"
+            >
+              <div class="timeline-header">
+                <span class="timeline-badge edu">Education</span>
+                <span class="timeline-date">2023 — 2027</span>
+              </div>
+              <h3 class="timeline-title">
+                B.Tech — Electronics &amp; Communication Engineering
+              </h3>
+              <h4 class="timeline-org">NIT Patna · Patna, India</h4>
+              <p class="timeline-desc">
+                Currently pursuing my B.Tech in ECE with a strong focus on
+                digital design, communication systems, and software development. Consistently maintaining a
+                good academic record.
+              </p>
+              <div class="timeline-tags">
+                <span>Digital Electronics</span><span>VLSI</span
+                ><span>Communication</span> <span>DSP</span><span>Verilog</span
+                ><span>C++</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ✏️ You can add more education entries below if needed (12th, certifications etc.) -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         🏆 ACHIEVEMENTS SECTION — To hide: comment out this entire
+         <section>...</section> block below.
+         ============================================================ -->
+    <section class="section achievements-section" id="achievements">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Milestones</span>
+          <h2 class="section-title">
+            Achievements & <span class="accent">Certifications</span>
+          </h2>
+          <p class="section-subtitle">
+            Academic recognitions, online certifications, and hackathon
+            experiences
+          </p>
+        </div>
+
+        <!-- CERTIFICATIONS ROW -->
+        <h3 class="ach-group-title">📜 Certifications</h3>
+        <div class="ach-grid">
+          <!-- ✏️ EDIT: Replace with your real certifications -->
+          <div class="ach-card cert-card">
+            <div class="ach-icon">🎓</div>
+            <div class="ach-body">
+              <span class="ach-tag">NPTEL</span>
+              <h4 class="ach-title">The Joy of Computing using Python</h4>
+              <p class="ach-org">IIT Madras · 2025</p>
+              <p class="ach-desc">
+                <b>Elite + Gold Certificate.</b>
+                Gained practical skills in Python programming, problem-solving, data structures, functions, file handling and fundamnetal programming concepts.
+              </p>
+            </div>
+          </div>
+
+          <div class="ach-card cert-card">
+            <div class="ach-icon">🎓</div>
+            <div class="ach-body">
+              <span class="ach-tag">NPTEL</span>
+              <h4 class="ach-title">Programming in Modern C++</h4>
+              <p class="ach-org">IIT Kharagpur · 2026</p>
+              <p class="ach-desc">
+                <b>Certified among Elite students.</b>
+                Developed proficieny in OOP, STL, memory management, modern c++ features and effiecient software development practices.
+              </p>
+            </div>
+          </div>
+
+          <div class="ach-card cert-card">
+            <div class="ach-icon">🎓</div>
+            <div class="ach-body">
+              <span class="ach-tag">CDAC</span>
+              <h4 class="ach-title">3D Printing and Additive Manufacturing Technology</h4>
+              <p class="ach-org">Ministry of Electronics and Information Technology · 2026</p>
+              <p class="ach-desc">
+                Foundational Knowledge of additive manufacturing processes, 3D modeling, prototyping techniques, materials and industrial applications.
+              </p>
+            </div>
+          </div>
+
+          <div class="ach-card cert-card">
+            <div class="ach-icon">🎓</div>
+            <div class="ach-body">
+              <span class="ach-tag">Indian Institute of remote Sensing, ISRO Dehradun</span>
+              <h4 class="ach-title">Usefulness of Remote Sensing & GIS for Environmental Studies</h4>
+              <p class="ach-org">ISRO · 2021</p>
+              <p class="ach-desc">
+                Developed an understanding of geospatial technologies. satellite data analysis, GIS tools, environmental monitoring, resour mapping and sustainable decision-making.
+              </p>
+            </div>
+          </div>
+
+            <div class="ach-card cert-card">
+            <div class="ach-icon">👑</div>
+            <div class="ach-body">
+              <span class="ach-tag">Competitve Programming</span>
+              <h4 class="ach-title">Knight Badge</h4>
+              <p class="ach-org">Leetcode · Ongoing</p>
+              <p class="ach-desc">
+                Utilising my problem solving skill to solve complex problem by using C++ Programming Language and ranked among top 3% of the programmers.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        
+
+
+        <!-- HACKATHONS / EVENTS ROW -->
+        <!-- <h3 class="ach-group-title">🚀 Hackathons & Events</h3>
+        <div class="ach-grid"> -->
+          <!-- ✏️ EDIT: Replace with your real hackathon experiences -->
+          <!-- <div class="ach-card hack-card">
+            <div class="ach-icon">🏅</div>
+            <div class="ach-body">
+              <span class="ach-tag hack-tag">Hackathon</span>
+              <h4 class="ach-title">Smart India Hackathon 2024</h4>
+              <p class="ach-org">Govt. of India · College Round</p>
+              <p class="ach-desc">
+                Built a real-time disaster alert system using ML and web
+                scraping. Cleared college-level round.
+              </p>
+            </div>
+          </div>
+
+          <div class="ach-card hack-card">
+            <div class="ach-icon">💡</div>
+            <div class="ach-body">
+              <span class="ach-tag hack-tag">Event</span>
+              <h4 class="ach-title">Technical Paper Presentation</h4>
+              <p class="ach-org">Your College Techfest · 2024</p>
+              <p class="ach-desc">
+                Presented a paper on "FPGA Implementation of a Digital Filter"
+                at the annual technical symposium.
+              </p>
+            </div>
+          </div>
+
+          <div class="ach-card hack-card">
+            <div class="ach-icon">🏆</div>
+            <div class="ach-body">
+              <span class="ach-tag hack-tag">Achievement</span>
+              <h4 class="ach-title">Academic Excellence Award</h4>
+              <p class="ach-org">Your College Name · 2023</p>
+              <p class="ach-desc">
+                Recognized for outstanding academic performance in 2nd year with
+                CGPA above 8.5.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- ============ END ACHIEVEMENTS ============ -->
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Let's Talk</span>
+          <h2 class="section-title">
+            Get In <span class="accent">Touch</span>
+          </h2>
+          <p class="section-subtitle">
+            Have a project in mind, want to collaborate, or just say hello?
+          </p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3 class="contact-heading">Let's work together</h3>
+            <p class="contact-text">
+              I'm currently <strong>open to internships</strong> and
+              <strong>project collaborations</strong>. Whether you have an
+              interesting opportunity or just want to chat about tech — my inbox
+              is always open.
+            </p>
+            <div class="contact-items">
+              <!-- ✏️ EDIT: Replace with your real email -->
+              <div class="contact-item">
+                <div class="contact-item-icon">📧</div>
+                <div>
+                  <strong>Email</strong>
+                  <a href="mailto:alex.morgan@example.com" id="contact-email"
+                    >manishkumartiwari735@gmail.com</a
+                  >
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item-icon">📍</div>
+                <div>
+                  <strong>Patna</strong>
+                  <span>India · Open to Remote</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item-icon">⏰</div>
+                <div>
+                  <strong>Response Time</strong>
+                  <span>Within 24 hours</span>
+                </div>
+              </div>
+            </div>
+            <div class="social-links">
+              <!-- ✏️ EDIT: Replace href="#" with your actual profile URLs -->
+              <a
+                href="https://github.com/manish-cnd"
+                class="social-btn"
+                id="social-github"
+                aria-label="GitHub"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/manish-m12k18t"
+                class="social-btn"
+                id="social-linkedin"
+                aria-label="LinkedIn"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                  />
+                </svg>
+              </a>
+              <!-- <a
+                href="#"
+                class="social-btn"
+                id="social-twitter"
+                aria-label="Twitter/X"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.733-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                  />
+                </svg>
+              </a> -->
+            </div>
+          </div>
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="form-name">Your Name *</label>
+                <input
+                  type="text"
+                  id="form-name"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="form-email">Email Address *</label>
+                <input
+                  type="email"
+                  id="form-email"
+                  name="email"
+                  placeholder="yourEmail@gmail.com"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="form-subject">Subject</label>
+              <input
+                type="text"
+                id="form-subject"
+                name="subject"
+                placeholder="Internship Opportunity / Collaboration / Say Hi"
+              />
+            </div>
+            <div class="form-group">
+              <label for="form-message">Message *</label>
+              <textarea
+                id="form-message"
+                name="message"
+                rows="5"
+                placeholder="Tell me about your opportunity or project..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn-submit" id="btn-submit">
+              <span class="btn-text">Send Message</span>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+            <div class="form-success" id="form-success">
+              <span>✅</span> Message sent! I'll get back to you soon.
+            </div>
+            <div class="form-error" id="form-error">
+              <span>❌</span> Please fill in all required fields correctly.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <span class="logo-bracket">&lt;</span>
+            <span class="logo-name">MANISH TIWARI</span>
+            <span class="logo-bracket">/&gt;</span>
+          </div>
+          <!-- <p class="footer-text">
+            Designed &amp; built for Professional Purpose
+          </p> -->
+          <div class="footer-links">
+            <a href="#hero">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ============================================================
+         🖱️ CUSTOM CURSOR — To disable: comment out the two divs below
+         AND comment out the CUSTOM CURSOR block in style.css
+         AND comment out the CUSTOM CURSOR IIFE in script.js
+         ============================================================ -->
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+    <!-- ============ END CUSTOM CURSOR ============ -->
+
+    <!-- ============================================================
+         🤖 CHATBOT — To disable: comment out this entire div block
+         AND comment out the CHATBOT block in style.css
+         AND comment out the CHATBOT IIFE in script.js
+         ============================================================ -->
+    <div id="chatbot-widget">
+      <!-- Toggle Button -->
+      <button
+        class="chat-toggle"
+        id="chat-toggle"
+        aria-label="Open chat assistant"
+      >
+        <span class="chat-toggle-icon chat-icon-open">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+            ></path>
+          </svg>
+        </span>
+        <span class="chat-toggle-icon chat-icon-close" style="display: none">
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </span>
+        <span class="chat-notif-dot" id="chat-notif"></span>
+      </button>
+
+      <!-- Chat Window -->
+      <div class="chat-window" id="chat-window">
+        <div class="chat-header">
+          <div class="chat-header-left">
+            <div class="chat-avatar">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                />
+              </svg>
+            </div>
+            <div>
+              <p class="chat-agent-name">Portfolio Assistant</p>
+              <p class="chat-status">
+                <span class="chat-online-dot"></span>Online
+              </p>
+            </div>
+          </div>
+          <button
+            class="chat-close-btn"
+            id="chat-close"
+            aria-label="Close chat"
+          >
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+
+        <div class="chat-messages" id="chat-messages">
+          <!-- Messages injected by JS -->
+        </div>
+
+        <div class="chat-suggestions" id="chat-suggestions"></div>
+
+        <div class="chat-input-row">
+          <input
+            type="text"
+            id="chat-input"
+            class="chat-input"
+            placeholder="Ask me anything..."
+            autocomplete="off"
+          />
+          <button class="chat-send" id="chat-send" aria-label="Send message">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- ============ END CHATBOT ============ -->
+
+    <!-- Script loaded LAST so all HTML elements exist in DOM when JS runs -->
+    <script src="script.js"></script>
+  </body>
+</html>
